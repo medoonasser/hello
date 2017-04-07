@@ -1,0 +1,29 @@
+<div>
+<div class = "col-xs-6 col-xs-offset-3">
+<div class = "pannel pannel-default">
+<div class="pannel-heading"><b>articles</b></div>
+<table class="table" style="
+background-color:white;
+margin-bottom:20px;" align="left">
+
+  <thead>
+<tr style="background-color: grey;">
+      <th>#</th>
+      <th>article</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%for x in articles %}
+    <tr>
+      <td> <a href="articles/{{x.id}}">{{x.title}}</a> </td>
+    </tr>
+    {%endfor%}
+  </tbody>
+</table>
+
+<td><b>Article</b></td>
+
+</tr> 
+
+
+
